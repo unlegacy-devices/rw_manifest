@@ -2,12 +2,15 @@
 <manifest>
 
   <remote name="rw"
-          fetch="https://github.com/RedWolfRecovery/" />  
+          fetch="https://github.com/RedWolfRecovery/" />
+  
+  <remote name="unlegacy"
+          fetch="https://github.com/unlegacy-devices/" />
 
   <remove-project name="android_bootable_recovery"/>
   <remove-project name="android_build"/>
 
-  <project name="rw_build" path="build" remote="rw" revision="rw-n" >
+  <project name="rw_build" path="build" remote="unlegacy" revision="rw-n" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
 
